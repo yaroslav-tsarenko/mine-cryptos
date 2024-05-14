@@ -1,0 +1,127 @@
+.unionIcon {
+  height: 384.5px;
+  width: 384.5px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -34.5px;
+  left: -342px;
+  object-fit: contain;
+}
+.frameChild {
+  width: 704px;
+  position: relative;
+  border-radius: 24px;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.ourVision {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 93px;
+}
+.aWorldTransformed {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #212121;
+}
+.ourVisionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ourVisionAt {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  color: #363588;
+}
+.frameContainer,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  gap: 32px;
+}
+.frameContainer {
+  width: 466px;
+  margin: 0 !important;
+  position: absolute;
+  top: 88px;
+  left: 891px;
+  max-width: 100%;
+}
+.frameWrapper,
+.rectangleParent,
+.unionParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.rectangleParent {
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 179px 0 0;
+  box-sizing: border-box;
+  position: relative;
+  gap: 222px;
+  z-index: 1;
+}
+.frameWrapper,
+.unionParent {
+  align-items: flex-start;
+}
+.unionParent {
+  width: 1536px;
+  justify-content: flex-start;
+  position: relative;
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 16px;
+  color: #3f28c6;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1200px) {
+  .rectangleParent {
+    gap: 111px;
+    padding-right: 89px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 825px) {
+  .aWorldTransformed {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .aWorldTransformed {
+    font-size: 29px;
+    line-height: 31px;
+  }
+  .rectangleParent {
+    gap: 55px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}

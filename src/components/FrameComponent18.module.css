@@ -1,0 +1,258 @@
+.enquiries,
+.reviews,
+.specification {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.specification {
+  color: #3f28c6;
+}
+.enquiries,
+.reviews {
+  display: inline-block;
+  min-width: 108px;
+}
+.reviews {
+  min-width: 96px;
+}
+.specificationParent {
+  width: 546px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+}
+.frameChild,
+.frameGroup {
+  align-self: stretch;
+  max-width: 100%;
+}
+.frameChild {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.frameItem {
+  height: 607px;
+  width: 1479px;
+  position: relative;
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.frameInner,
+.vectorIcon {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 1483px;
+  height: 1px;
+  z-index: 1;
+}
+.vectorIcon {
+  top: 0;
+  left: 310px;
+  width: 0;
+  height: 607px;
+  object-fit: contain;
+  z-index: 2;
+}
+.frameChild1,
+.frameChild2,
+.frameChild3,
+.frameChild4 {
+  position: absolute;
+  top: 198px;
+  left: 0;
+  width: 1483px;
+  height: 1px;
+  z-index: 3;
+}
+.frameChild2,
+.frameChild3,
+.frameChild4 {
+  top: 301px;
+}
+.frameChild3,
+.frameChild4 {
+  top: 404px;
+}
+.frameChild4 {
+  top: 507px;
+}
+.vectorParent {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: -2.5px;
+}
+.exclusiveHardware {
+  position: relative;
+  line-height: 24px;
+  z-index: 1;
+}
+.customization {
+  display: inline-block;
+  min-width: 111px;
+}
+.customization,
+.enhancedSecurity,
+.monitoring {
+  position: relative;
+  line-height: 24px;
+  z-index: 1;
+}
+.monitoring {
+  display: inline-block;
+  min-width: 120px;
+}
+.scalability {
+  display: inline-block;
+  min-width: 79px;
+}
+.highSpeedConnectivity,
+.scalability {
+  position: relative;
+  line-height: 24px;
+  z-index: 1;
+}
+.exclusiveHardwareParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 78px;
+}
+.tailorYourHosting,
+.yourOwnDedicated {
+  display: inline-block;
+  max-width: 100%;
+}
+.multiLayeredSecurityMeasure,
+.tailorYourHosting,
+.yourOwnDedicated {
+  position: relative;
+  line-height: 24px;
+  z-index: 1;
+}
+.continuousServerMonitoring,
+.easilyScaleYour,
+.lightningFastNetworkConnect {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.yourOwnDedicatedServerWithParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 77px;
+  max-width: 100%;
+}
+.frameWrapper,
+.rectangleParent {
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1px 0 0;
+  max-width: 100%;
+  color: #363588;
+}
+.rectangleParent {
+  align-self: stretch;
+  border: 1px solid #212121;
+  flex-direction: row;
+  padding: 36px 65.5px 33px;
+  position: relative;
+  gap: 123px;
+  font-size: 16px;
+}
+.frameParent,
+.pdpInner,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1483px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 43px;
+}
+.pdpInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 24px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1200px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+    gap: 61px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 825px) {
+  .yourOwnDedicatedServerWithParent {
+    gap: 38px;
+  }
+  .rectangleParent {
+    gap: 31px;
+    padding-top: 23px;
+    padding-bottom: 21px;
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: 21px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .enquiries,
+  .reviews,
+  .specification {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .specificationParent {
+    flex-wrap: wrap;
+  }
+  .yourOwnDedicatedServerWithParent {
+    gap: 19px;
+  }
+  .rectangleParent {
+    gap: 15px;
+  }
+}

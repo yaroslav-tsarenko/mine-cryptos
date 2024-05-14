@@ -1,0 +1,124 @@
+.blogsInner,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1536px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 128px;
+}
+.blogsInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.exploreOurCrypto {
+  margin: 0;
+  width: 854px;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.frameChild {
+  height: 56px;
+  width: 152px;
+}
+.exploreOurCryptoMiningSoluParent,
+.instanceParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+}
+.instanceParent {
+  align-items: flex-start;
+}
+.frameGroup {
+  width: 1536px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 48px;
+  max-width: 100%;
+}
+.blogs,
+.blogsChild,
+.frameGroup {
+  display: flex;
+  align-items: flex-start;
+}
+.blogsChild {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 48px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+.blogs {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 112px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1500px) {
+  .instanceParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .frameParent {
+    gap: 64px;
+  }
+  .exploreOurCryptoMiningSoluParent {
+    flex-wrap: wrap;
+  }
+  .blogs {
+    gap: 56px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .frameParent {
+    gap: 32px;
+  }
+  .exploreOurCrypto {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameGroup {
+    gap: 24px;
+  }
+  .blogs {
+    gap: 28px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: 16px;
+  }
+  .exploreOurCrypto {
+    font-size: 29px;
+    line-height: 31px;
+  }
+}

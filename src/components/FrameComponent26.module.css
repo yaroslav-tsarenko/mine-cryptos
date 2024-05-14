@@ -1,0 +1,200 @@
+.frequentlyAskedQuestions {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.frequentlyAskedQuestionsWrapper {
+  width: 787px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameChild {
+  height: 56px;
+  width: 172px;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+}
+.howDoI {
+  margin: 0;
+  width: 867px;
+  position: relative;
+  font-size: inherit;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.frameItem {
+  width: 16px;
+  height: 10px;
+  position: relative;
+  object-fit: contain;
+}
+.vectorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.5px 8px;
+  box-sizing: border-box;
+  min-height: 11px;
+}
+.howDoIGetStartedWithCrypParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+}
+.toGetStarted {
+  width: 867px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363588;
+  display: inline-block;
+  max-width: 100%;
+}
+.frameParent1 {
+  width: 1450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameDiv,
+.frameInner {
+  align-self: stretch;
+  max-width: 100%;
+}
+.frameInner {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 24px;
+}
+.canIUpgrade {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.canIUpgradeOrScaleMyMiniWrapper {
+  width: 867px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.vectorIcon {
+  width: 16px;
+  height: 10px;
+  position: relative;
+  object-fit: contain;
+}
+.frameParent2,
+.vectorContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.vectorContainer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5px 8px;
+  box-sizing: border-box;
+  min-height: 11px;
+}
+.frameParent2 {
+  width: 1450px;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
+}
+.frameContainer,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameContainer {
+  align-self: stretch;
+  gap: 36px;
+  font-size: 24px;
+}
+.frameParent {
+  width: 1536px;
+  gap: 64px;
+  text-align: left;
+  font-size: 48px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1050px) {
+  .frequentlyAskedQuestions {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameGroup,
+  .frameParent2,
+  .howDoIGetStartedWithCrypParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameContainer {
+    gap: 18px;
+  }
+  .frameParent {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frequentlyAskedQuestions {
+    font-size: 29px;
+    line-height: 31px;
+  }
+  .canIUpgrade,
+  .howDoI {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .frameParent {
+    gap: 16px;
+  }
+}

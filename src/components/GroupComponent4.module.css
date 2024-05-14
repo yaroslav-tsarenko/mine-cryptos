@@ -1,0 +1,97 @@
+.frameChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.whereInnovationMeets {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 76px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.whereInnovationMeetsOpportuWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 31px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.minecryptosWasBorn {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 1;
+}
+.frameGroup,
+.frameParent,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameGroup {
+  width: 1044px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.frameParent,
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 131px;
+  position: relative;
+  gap: 162px;
+  text-align: center;
+  font-size: 72px;
+  color: #fff;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1200px) {
+  .frameParent {
+    gap: 81px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .whereInnovationMeets {
+    font-size: 58px;
+    line-height: 61px;
+  }
+  .frameParent {
+    gap: 40px;
+    padding-bottom: 85px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whereInnovationMeets {
+    font-size: 43px;
+    line-height: 46px;
+  }
+}

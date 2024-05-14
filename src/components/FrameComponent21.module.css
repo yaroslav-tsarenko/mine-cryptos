@@ -1,0 +1,59 @@
+.blogPosts {
+  color: #3f28c6;
+}
+.title {
+  margin: 0;
+  width: 868px;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.componentParent,
+.titleParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.componentParent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px 65.5px;
+  min-height: 824px;
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+}
+.titleParent {
+  flex-direction: column;
+  gap: 44px;
+  text-align: left;
+  font-size: 36px;
+  color: #212121;
+  font-family: Poppins;
+}
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 29px;
+    line-height: 32px;
+  }
+  .componentParent {
+    gap: 33px;
+  }
+  .titleParent {
+    gap: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .componentParent {
+    gap: 16px;
+  }
+}

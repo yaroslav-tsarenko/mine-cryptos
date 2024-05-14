@@ -1,0 +1,37 @@
+.contact,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  gap: 96px;
+  max-width: 100%;
+}
+.contact {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  gap: var(--gap-109xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1050px) {
+  .frameParent {
+    gap: var(--gap-29xl);
+  }
+  .contact {
+    gap: var(--gap-45xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-5xl);
+  }
+  .contact {
+    gap: var(--gap-13xl);
+  }
+}

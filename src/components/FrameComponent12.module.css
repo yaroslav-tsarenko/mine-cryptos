@@ -1,0 +1,109 @@
+.ourMission {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 107px;
+}
+.empoweringDigitalMiners {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #212121;
+}
+.ourMissionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.toEmpowerIndividuals {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  color: #363588;
+}
+.frameContainer,
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  align-self: stretch;
+  gap: 32px;
+}
+.frameContainer {
+  width: 466px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  min-width: 466px;
+  max-width: 100%;
+}
+.frameChild {
+  width: 750px;
+  position: relative;
+  border-radius: 24px;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.frameParent,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1536px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.frameWrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 16px;
+  color: #3f28c6;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1425px) {
+  .frameChild,
+  .frameContainer {
+    flex: 1;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 825px) {
+  .empoweringDigitalMiners {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameGroup {
+    gap: 16px;
+  }
+  .frameContainer {
+    gap: 16px;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .empoweringDigitalMiners {
+    font-size: 29px;
+    line-height: 31px;
+  }
+}

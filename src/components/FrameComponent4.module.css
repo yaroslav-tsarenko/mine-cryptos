@@ -1,0 +1,174 @@
+.theTriadOf {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.atMinecryptosWere {
+  margin: 0;
+}
+.atMinecryptosWereContainer {
+  width: 756px;
+  height: 120px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363588;
+  display: inline-block;
+  max-width: 100%;
+}
+.theTriadOfExcellenceSpeedParent {
+  width: 914px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 100%;
+}
+.frameChild {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: contain;
+}
+.ourHostingServices {
+  width: 294px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+}
+.rectangleParent {
+  width: 358px;
+  border-radius: 16px;
+  border: 3px solid rgba(31, 120, 255, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 44px 20px 44px 32px;
+  gap: 24px;
+  max-width: 100%;
+}
+.frameItem {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: contain;
+}
+.yourDataIs {
+  width: 294px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+}
+.rectangleGroup {
+  width: 358px;
+  border-radius: 16px;
+  border: 3px solid rgba(31, 120, 255, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 44px 20px 44px 32px;
+  gap: 24px;
+  max-width: 100%;
+}
+.frameInner {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: cover;
+}
+.ourHostingPlans {
+  width: 294px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+}
+.unionIcon {
+  width: 393.3px;
+  height: 393.3px;
+  position: relative;
+  margin: 0 !important;
+  object-fit: contain;
+  z-index: 1;
+}
+.rectangleContainer {
+  height: 316px;
+  width: 358px;
+  border-radius: 16px;
+  border: 3px solid rgba(31, 120, 255, 0.6);
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 48px 0 0 32px;
+  gap: 24px;
+}
+.frameGroup,
+.frameParent,
+.rectangleContainer {
+  display: flex;
+  max-width: 100%;
+}
+.frameGroup {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #363588;
+}
+.frameParent {
+  width: 1268px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 64px;
+  z-index: 1;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1200px) {
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 825px) {
+  .theTriadOf {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameParent {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .theTriadOf {
+    font-size: 29px;
+    line-height: 31px;
+  }
+  .frameParent {
+    gap: 16px;
+  }
+}

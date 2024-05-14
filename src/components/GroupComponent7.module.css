@@ -1,0 +1,97 @@
+.frameChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.insightsAndUpdates {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+.welcomeToOur {
+  width: 1044px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.welcomeToOurInsightsAndUWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 16px;
+}
+.insightsAndUpdatesParent {
+  width: 1366px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 100%;
+}
+.frameParent,
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 118px;
+  position: relative;
+  gap: 123px;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1225px) {
+  .frameParent {
+    gap: 61px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .insightsAndUpdates {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameParent {
+    gap: 31px;
+    padding-bottom: 77px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .insightsAndUpdates {
+    font-size: 29px;
+    line-height: 31px;
+  }
+}

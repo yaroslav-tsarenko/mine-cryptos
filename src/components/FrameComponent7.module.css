@@ -1,0 +1,74 @@
+.exploreOurCrypto {
+  margin: 0;
+  width: 854px;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.frameChild {
+  height: 56px;
+  width: 152px;
+}
+.exploreOurCryptoMiningSoluParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+}
+.frameParent,
+.instanceParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.instanceParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 24px;
+  color: #363588;
+}
+.frameParent {
+  width: 1536px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 48px;
+  text-align: left;
+  font-size: 48px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1425px) {
+  .instanceParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .exploreOurCryptoMiningSoluParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 825px) {
+  .exploreOurCrypto {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameParent {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .exploreOurCrypto {
+    font-size: 29px;
+    line-height: 31px;
+  }
+}

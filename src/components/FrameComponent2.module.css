@@ -1,0 +1,40 @@
+.name,
+.typeName {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+}
+.name {
+  min-width: 53px;
+}
+.typeName {
+  width: 81px;
+  border: 0;
+  outline: 0;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  background-color: transparent;
+  height: 24px;
+  color: #a4a4a4;
+  text-align: left;
+  padding: 0;
+}
+.frameChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.nameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}

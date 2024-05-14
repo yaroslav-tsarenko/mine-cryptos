@@ -1,0 +1,166 @@
+.frameChild,
+.unionIcon {
+  position: absolute;
+  object-fit: contain;
+}
+.unionIcon {
+  top: 263px;
+  left: -98px;
+  width: 393.3px;
+  height: 393.3px;
+}
+.frameChild {
+  height: calc(100% - 0.3px);
+  top: 0;
+  bottom: 0.3px;
+  left: 181.8px;
+  max-height: 100%;
+  width: 713px;
+  z-index: 1;
+}
+.unionParent {
+  height: 656.3px;
+  flex: 1;
+  position: relative;
+  min-width: 582px;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  max-width: 100%;
+}
+.unionIcon1 {
+  height: 351.3px;
+  width: 351.3px;
+  position: absolute;
+  margin: 0 !important;
+  top: -57px;
+  right: -120px;
+  object-fit: contain;
+}
+.whyMinecryptosIs {
+  margin: 0;
+  width: 536px;
+  position: relative;
+  font-size: inherit;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.atMinecryptosWere {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363588;
+}
+.frameContainer,
+.whyMinecryptosIsYourCryptoParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.whyMinecryptosIsYourCryptoParent {
+  width: 680px;
+  flex-direction: column;
+  gap: 16px;
+}
+.frameContainer {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 67px;
+  font-size: 16px;
+  color: #363588;
+}
+.frameGroup {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 32.9px 0 0;
+  box-sizing: border-box;
+  gap: 32px;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  z-index: 1;
+}
+.frameGroup,
+.frameParent,
+.frameWrapper,
+.unionGroup {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.unionGroup {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+.frameParent,
+.frameWrapper {
+  box-sizing: border-box;
+}
+.frameWrapper {
+  width: 759.9px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 88px 0 0;
+  min-width: 759.8999999999942px;
+}
+.frameParent {
+  width: 1758.3px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px 0 0;
+  gap: 83.6px;
+  text-align: left;
+  font-size: 48px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 1425px) {
+  .frameWrapper {
+    flex: 1;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 825px) {
+  .unionParent {
+    min-width: 100%;
+  }
+  .whyMinecryptosIs {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .frameContainer {
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+  .frameGroup {
+    gap: 16px;
+  }
+  .frameWrapper {
+    padding-top: 57px;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .frameParent {
+    gap: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whyMinecryptosIs {
+    font-size: 29px;
+    line-height: 31px;
+  }
+  .frameContainer {
+    gap: 17px;
+  }
+  .frameParent {
+    gap: 21px;
+  }
+}

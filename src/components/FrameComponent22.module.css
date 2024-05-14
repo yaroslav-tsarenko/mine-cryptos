@@ -1,0 +1,77 @@
+.componentChild {
+  align-self: stretch;
+  height: 202px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.componentChild,
+.title,
+.title1 {
+  position: relative;
+}
+.title {
+  line-height: 24px;
+  display: inline-block;
+  min-width: 108px;
+}
+.title1 {
+  margin: 0;
+  align-self: stretch;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.titleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.title2 {
+  position: relative;
+  line-height: 24px;
+  color: #3f28c6;
+  display: inline-block;
+  min-width: 79px;
+}
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 44px;
+}
+.rectangleParent {
+  width: 467px;
+  align-items: flex-end;
+  gap: 24px;
+  min-width: 444px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #212121;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 850px) {
+  .frameParent {
+    gap: 22px;
+  }
+  .rectangleParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title1 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}

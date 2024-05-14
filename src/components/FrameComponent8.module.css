@@ -1,0 +1,67 @@
+.bitforgeProMiner,
+.instanceChild {
+  align-self: stretch;
+  position: relative;
+}
+.instanceChild {
+  height: 340px;
+  border-radius: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.bitforgeProMiner {
+  margin: 0;
+  font-size: inherit;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.sha256AlgorithmMining {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+}
+.bitforgeProMinerParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.credit20000 {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3f28c6;
+}
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frameParent {
+  align-self: stretch;
+  gap: 16px;
+}
+.rectangleParent {
+  width: 340px;
+  gap: 24px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 24px;
+  color: #363588;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 450px) {
+  .bitforgeProMiner {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}

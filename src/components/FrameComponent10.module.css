@@ -1,0 +1,109 @@
+.frameChild {
+  align-self: stretch;
+  width: 49px;
+  position: relative;
+  background-color: #fff;
+}
+.minecryptos {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 43px;
+  font-weight: 700;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.minecryptosWrapper {
+  flex-direction: column;
+  padding: 3px 0 0;
+}
+.frameWrapper,
+.minecryptosWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: 21px;
+}
+.frameWrapper {
+  height: 52.5px;
+  width: 642.5px;
+  flex-direction: column;
+  padding: 3.5px 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.aboutUs,
+.articles,
+.home {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 46px;
+}
+.aboutUs,
+.articles {
+  min-width: 59px;
+}
+.aboutUs {
+  min-width: 71px;
+  white-space: nowrap;
+}
+.instanceWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frameParent,
+.homeParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  text-align: left;
+  color: #fff;
+  font-family: "Helvetica Neue";
+}
+.homeParent {
+  margin: 0;
+  width: 549px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  gap: 344.5px;
+  z-index: 2;
+  font-size: 40px;
+}
+@media screen and (max-width: 1425px) {
+  .frameParent {
+    gap: 172px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .homeParent {
+    display: none;
+  }
+}
+@media screen and (max-width: 825px) {
+  .frameParent {
+    gap: 86px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: 43px;
+  }
+}

@@ -1,0 +1,65 @@
+.frameChild {
+  height: 74px;
+  width: 74px;
+  position: relative;
+  object-fit: cover;
+}
+.ensuringOptimalPerformance {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 147px;
+}
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.frameItem {
+  height: 74px;
+  width: 74px;
+  position: relative;
+  object-fit: cover;
+}
+.wideArrayOf {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 147px;
+}
+.rectangleGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.frameParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  min-width: 214px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #363588;
+  font-family: "Helvetica Neue";
+}
+@media screen and (max-width: 450px) {
+  .rectangleGroup,
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    gap: 16px;
+  }
+}
