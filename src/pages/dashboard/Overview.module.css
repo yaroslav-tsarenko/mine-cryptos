@@ -1,0 +1,232 @@
+.gauge {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gaugeValue {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.gaugeValue strong {
+  font-size: 30px;
+  line-height: 1;
+  background: #fff;
+  padding: 0 6px;
+  border-radius: 8px;
+}
+
+.gaugeValue span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.gaugeCard {
+  justify-content: space-between;
+}
+
+.mined {
+  background: var(--grad-primary) !important;
+  color: #fff;
+  border: 0 !important;
+}
+
+.mined h2 {
+  color: #fff;
+}
+
+.minedValue {
+  font-size: clamp(28px, 3vw, 38px);
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.minedUnit {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.ticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: var(--pill);
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 13px;
+}
+
+.pulse {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3ef08b;
+}
+
+.pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #3ef08b;
+  animation: pulse-ring 1.6s ease-out infinite;
+}
+
+.balances {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.balances li {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--lavender);
+  font-weight: 700;
+}
+
+.balances small {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.coin {
+  padding: 3px 8px;
+  border-radius: var(--pill);
+  background: #fff;
+  color: var(--primary);
+  font-size: 12px;
+  text-align: center;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chartSvg {
+  width: 100%;
+  height: 180px;
+}
+
+.chartAxis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--subtle);
+}
+
+.contracts {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contracts small {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.contractTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contractTop a:hover {
+  color: var(--primary);
+}
+
+.contractTop span {
+  color: var(--indigo);
+}
+
+.bar {
+  height: 8px;
+  margin-bottom: 4px;
+  border-radius: var(--pill);
+  background: var(--line);
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--grad-primary);
+}
+
+.workers {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workers li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-bottom: 1px dashed var(--line);
+  font-size: 14px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  padding: 0 !important;
+  border-radius: 50%;
+  background: currentColor !important;
+}
+
+.wHash {
+  margin-left: auto;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.refer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--lavender);
+}
+
+.refer strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--primary);
+}

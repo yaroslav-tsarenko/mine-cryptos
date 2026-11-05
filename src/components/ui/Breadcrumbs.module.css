@@ -1,0 +1,42 @@
+.nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav li + li::before {
+  content: "/";
+  opacity: 0.6;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.light [aria-current] {
+  color: #fff;
+}
+
+.dark {
+  color: var(--muted);
+}
+
+.dark [aria-current] {
+  color: var(--text);
+}

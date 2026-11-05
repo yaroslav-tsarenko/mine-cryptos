@@ -1,0 +1,142 @@
+.steps {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  flex: 1;
+  padding-top: 8px;
+  border-top: 3px solid var(--line);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--subtle);
+}
+
+.steps .on {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  align-self: flex-start;
+  margin-top: -8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.max {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: var(--pill);
+  background: var(--primary-soft-2);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.quick {
+  display: flex;
+  gap: 8px;
+  margin-top: -6px;
+}
+
+.quick button {
+  flex: 1;
+  padding: 8px;
+  border-radius: var(--pill);
+  border: 1.5px solid var(--line-strong);
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--indigo);
+}
+
+.quick button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.summary {
+  margin: 0;
+  padding: 6px 16px;
+  border-radius: 12px;
+  background: var(--lavender);
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line-strong);
+  font-size: 14px;
+}
+
+.summary div:last-child {
+  border-bottom: 0;
+}
+
+.summary dt {
+  color: var(--muted);
+}
+
+.summary dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.total dd {
+  color: var(--success);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.grow {
+  flex: 1;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  color: var(--indigo);
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--success);
+  color: #fff;
+  box-shadow: 0 0 0 10px var(--success-soft);
+  animation: pop-in 0.5s var(--ease);
+}
+
+.tx {
+  padding: 8px 14px;
+  border-radius: var(--pill);
+  background: var(--lavender-2);
+  font-family: var(--mono);
+  font-size: 13px;
+}

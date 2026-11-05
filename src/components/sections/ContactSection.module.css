@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.intro img {
+  width: min(100%, 460px);
+  margin-top: 16px;
+  animation: float 8s ease-in-out infinite;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .intro img {
+    width: min(70%, 320px);
+  }
+}

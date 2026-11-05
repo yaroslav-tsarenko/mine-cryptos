@@ -1,0 +1,63 @@
+.band {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px 40px;
+  padding: clamp(32px, 5vw, 56px) clamp(24px, 5vw, 64px);
+  padding-right: clamp(24px, 22vw, 300px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  color: #fff;
+  background:
+    url("/images/bg-banner.webp") center / cover no-repeat,
+    var(--grad);
+  box-shadow: var(--shadow-lg);
+}
+
+.text {
+  flex: 1 1 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.text h2 {
+  font-size: clamp(28px, 3.4vw, 40px);
+}
+
+.text p {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 560px;
+}
+
+.actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.art {
+  position: absolute;
+  right: clamp(-40px, -2vw, 0px);
+  bottom: -40px;
+  width: clamp(160px, 20vw, 260px);
+  filter: drop-shadow(0 20px 30px rgba(40, 20, 120, 0.3));
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .band {
+    padding-right: clamp(24px, 5vw, 64px);
+    padding-bottom: 170px;
+  }
+  .art {
+    right: 16px;
+    width: 150px;
+  }
+}

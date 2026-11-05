@@ -1,0 +1,272 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.req {
+  color: var(--primary);
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--text);
+  font-size: 16px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input::placeholder {
+  color: rgba(54, 53, 136, 0.45);
+}
+
+.input:hover {
+  border-color: rgba(63, 40, 198, 0.45);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(63, 40, 198, 0.12);
+}
+
+.control .input:has(+ .trailing) {
+  padding-right: 52px;
+}
+
+.trailing {
+  position: absolute;
+  right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.textarea {
+  min-height: 128px;
+  resize: vertical;
+}
+
+.invalid .input {
+  border-color: var(--danger);
+}
+
+.invalid .input:focus {
+  box-shadow: 0 0 0 4px var(--danger-soft);
+}
+
+.error {
+  font-size: 13px;
+  color: var(--danger);
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.selectWrap {
+  position: relative;
+}
+
+.select {
+  appearance: none;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+.caret {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--indigo);
+  pointer-events: none;
+}
+
+/* Checkbox */
+.check {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--indigo);
+  line-height: 1.4;
+}
+
+.check input {
+  position: absolute;
+  opacity: 0;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+
+.box {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid var(--line-strong);
+  background: #fff;
+  color: transparent;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.check:hover .box {
+  border-color: var(--primary);
+}
+
+.check input:checked + .box {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.check input:focus-visible + .box {
+  box-shadow: 0 0 0 4px rgba(63, 40, 198, 0.2);
+}
+
+.checkLabel a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Toggle */
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.toggleLabel {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.switch {
+  flex: none;
+  position: relative;
+  width: 48px;
+  height: 28px;
+  border: 0;
+  border-radius: var(--pill);
+  background: var(--line-strong);
+  transition: background 0.2s;
+}
+
+.switchOn {
+  background: var(--primary);
+}
+
+.knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s var(--ease);
+}
+
+.switchOn .knob {
+  transform: translateX(20px);
+}
+
+/* Range */
+.rangeHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rangeValue {
+  font-weight: 700;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.range {
+  --pct: 50%;
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: var(--pill);
+  background: linear-gradient(90deg, var(--primary) var(--pct), var(--line) var(--pct));
+}
+
+.range::-moz-range-track {
+  height: 8px;
+  border-radius: var(--pill);
+  background: linear-gradient(90deg, var(--primary) var(--pct), var(--line) var(--pct));
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(63, 40, 198, 0.35);
+  transition: transform 0.15s;
+}
+
+.range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(63, 40, 198, 0.35);
+}
+
+.range:active::-webkit-slider-thumb {
+  transform: scale(1.15);
+}
+
+.rangeScale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--subtle);
+}

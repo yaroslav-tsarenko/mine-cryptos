@@ -1,0 +1,127 @@
+.map {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(120% 120% at 30% 20%, #ffffff 0%, var(--lavender-2) 60%, #e9e2ff 100%);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  min-height: 100%;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+}
+
+.dots {
+  fill: none;
+  stroke: rgba(63, 40, 198, 0.32);
+  stroke-width: 4.6;
+  stroke-linecap: round;
+}
+
+.arc {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 6;
+  opacity: 0.55;
+  animation: dash 1.6s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+}
+
+.pin {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(63, 40, 198, 0.4);
+  transition: transform 0.25s var(--ease);
+}
+
+.pin::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  animation: pulse-ring 2.2s ease-out infinite;
+}
+
+.marker:hover .pin {
+  transform: scale(1.25);
+}
+
+.active .pin {
+  width: 18px;
+  height: 18px;
+  background: #f590f5;
+  transform: scale(1.15);
+}
+
+.active .pin::after {
+  border-color: #f590f5;
+}
+
+.label {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% - 4px);
+  transform: translate(-50%, 4px);
+  padding: 4px 10px;
+  border-radius: var(--pill);
+  background: #fff;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s var(--ease);
+}
+
+.marker:hover .label,
+.marker:focus-visible .label,
+.active .label {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 600px) {
+  .label {
+    display: none;
+  }
+  .marker {
+    width: 28px;
+    height: 28px;
+  }
+}

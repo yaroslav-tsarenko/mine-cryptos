@@ -1,0 +1,32 @@
+.loader {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding-top: var(--header-h);
+  background: linear-gradient(180deg, var(--lavender), #fff);
+}
+
+.full {
+  min-height: 100vh;
+}
+
+.mark {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 6px;
+  animation: loader-spin 1.1s var(--ease) infinite;
+}
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(0.8);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
+  }
+}

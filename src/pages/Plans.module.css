@@ -1,0 +1,172 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 10px 20px;
+  border-radius: var(--pill);
+  border: 1.5px solid var(--line-strong);
+  background: #fff;
+  color: var(--indigo);
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.chipActive,
+.chipActive:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort {
+  min-width: 220px;
+}
+
+.sort select {
+  min-height: 48px;
+  border-radius: var(--pill);
+  padding-left: 20px;
+}
+
+.count {
+  margin: 24px 0 32px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px 28px;
+}
+
+.tableWrap {
+  position: relative; /* contain visually-hidden headers so they cannot widen the page */
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  padding: 16px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.table thead th {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: var(--lavender);
+}
+
+.wrapCell {
+  white-space: normal !important;
+  min-width: 150px;
+}
+
+.table tbody th {
+  color: var(--text);
+}
+
+.table td {
+  color: var(--indigo);
+}
+
+.table tbody tr {
+  transition: background 0.2s;
+}
+
+.table tbody tr:hover {
+  background: var(--lavender);
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.badge {
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: var(--pill);
+  background: var(--primary-soft-2);
+  color: var(--primary);
+  font-size: 11px;
+}
+
+.included {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--indigo);
+  font-weight: 500;
+}
+
+.included li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.included svg {
+  color: var(--success);
+}
+
+.faq {
+  max-width: 980px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .controls,
+  .sort {
+    width: 100%;
+  }
+}

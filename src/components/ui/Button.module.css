@@ -1,0 +1,124 @@
+.btn {
+  --h: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: var(--h);
+  padding: 0 32px;
+  border-radius: var(--pill);
+  border: 1.5px solid transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.25s var(--ease),
+    transform 0.25s var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.99);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.trailing {
+  transition: transform 0.25s var(--ease);
+}
+
+.btn:hover .trailing {
+  transform: translateX(4px);
+}
+
+.sm {
+  --h: 44px;
+  padding: 0 22px;
+  font-size: 15px;
+}
+
+.md {
+  --h: 56px;
+}
+
+.lg {
+  --h: 64px;
+  padding: 0 40px;
+  font-size: 17px;
+}
+
+.block {
+  width: 100%;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+  box-shadow: 0 12px 28px rgba(63, 40, 198, 0.32);
+  transform: translateY(-2px);
+}
+
+.outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.outline:hover:not(:disabled) {
+  background: var(--primary);
+  color: #fff;
+}
+
+.white {
+  background: #fff;
+  color: var(--primary);
+}
+
+.white:hover:not(:disabled) {
+  box-shadow: 0 12px 28px rgba(33, 18, 120, 0.25);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.link {
+  --h: auto;
+  padding: 6px 0;
+  background: none;
+  color: inherit;
+  border: 0;
+}
+
+.link:hover .trailing {
+  transform: translateX(6px);
+}
+
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.loading {
+  cursor: progress;
+}

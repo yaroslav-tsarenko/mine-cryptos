@@ -1,0 +1,37 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  font-size: clamp(24px, 2.4vw, 30px);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.mark {
+  width: 1.2em;
+  height: 1.2em;
+  flex: none;
+  transition: transform 0.5s var(--ease);
+}
+
+.logo:hover .mark {
+  transform: rotate(90deg);
+}
+
+.light {
+  color: #fff;
+}
+
+.light .mark {
+  background: #fff;
+}
+
+.dark {
+  color: var(--text);
+}
+
+.dark .mark {
+  background: var(--primary);
+}

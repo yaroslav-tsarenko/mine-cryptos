@@ -1,0 +1,256 @@
+.steps {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--subtle);
+}
+
+.steps span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--line);
+  font-size: 12px;
+}
+
+.stepCurrent {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.stepCurrent span,
+.stepDone span {
+  background: var(--primary);
+  color: #fff;
+}
+
+.stepDone {
+  color: var(--indigo) !important;
+  border-color: rgba(63, 40, 198, 0.4) !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.summary {
+  margin: 0;
+  padding: 8px 18px;
+  border-radius: var(--radius);
+  background: var(--lavender);
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line-strong);
+}
+
+.summary div:last-child {
+  border-bottom: 0;
+}
+
+.summary dt {
+  color: var(--muted);
+}
+
+.summary dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.discount dd {
+  color: var(--success);
+}
+
+.total dt,
+.total dd {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.methods {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.methods legend {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.method {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line-strong);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.method input {
+  position: absolute;
+  opacity: 0;
+}
+
+.method:has(input:focus-visible) {
+  box-shadow: 0 0 0 4px rgba(63, 40, 198, 0.2);
+}
+
+.method span {
+  font-size: 13px;
+  color: var(--indigo);
+}
+
+.method small {
+  font-size: 11px;
+  color: var(--subtle);
+}
+
+.methodActive {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.deposit {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px dashed var(--line-strong);
+}
+
+.depositText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.depositText small {
+  color: var(--muted);
+}
+
+.depositText code {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--indigo);
+  overflow-wrap: anywhere;
+}
+
+.copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-top: 4px;
+  padding: 6px 12px;
+  border-radius: var(--pill);
+  border: 1px solid var(--primary);
+  background: #fff;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.error {
+  margin-top: -8px;
+  font-size: 13px;
+  color: var(--danger);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.grow {
+  flex: 1;
+}
+
+.processing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.processing p {
+  color: var(--muted);
+  max-width: 340px;
+}
+
+.ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-soft-2);
+  border-top-color: var(--primary);
+  animation: spin 0.9s linear infinite;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.done p {
+  color: var(--indigo);
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--success);
+  color: #fff;
+  box-shadow: 0 0 0 10px var(--success-soft);
+  animation: pop-in 0.5s var(--ease);
+}
+
+@media (max-width: 480px) {
+  .methods {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .deposit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

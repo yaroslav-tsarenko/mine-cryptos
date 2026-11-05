@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.services {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.services legend {
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.req {
+  color: var(--primary);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+}
+
+.error {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--danger);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
+  margin-top: 8px;
+}
+
+.submit {
+  flex: 1;
+  min-width: 200px;
+}
+
+.faq {
+  color: var(--text);
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 32px;
+  border-radius: var(--radius);
+  background: #fff;
+  border: 3px solid var(--line-blue);
+  animation: pop-in 0.4s var(--ease);
+}
+
+.successIcon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--success-soft);
+  color: var(--success);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.success h3 {
+  font-size: 22px;
+}
+
+.success p {
+  color: var(--indigo);
+}
+
+@media (max-width: 560px) {
+  .row,
+  .serviceGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

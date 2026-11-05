@@ -1,0 +1,102 @@
+.bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: clamp(-90px, -6vw, -40px);
+  border-block: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.track {
+  flex: 1;
+  display: flex;
+  width: max-content;
+  animation: marquee 48s linear infinite;
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+
+.bar:hover .track {
+  animation-play-state: paused;
+}
+
+.row {
+  display: flex;
+  flex: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 28px;
+  font-size: 15px;
+  white-space: nowrap;
+  border-right: 1px solid var(--line);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.up {
+  color: var(--success);
+  transition: color 1s;
+}
+
+.down {
+  color: var(--danger);
+}
+
+.pos {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.neg {
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.more {
+  flex: none;
+  align-self: stretch;
+  display: grid;
+  place-items: center;
+  padding: 0 24px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.more:hover {
+  background: var(--primary-hover);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .more {
+    display: none;
+  }
+}

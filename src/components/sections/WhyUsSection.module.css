@@ -1,0 +1,59 @@
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.media img {
+  width: min(100%, 560px);
+  animation: float 8s ease-in-out infinite;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 28px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.points img {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+
+.points strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--text);
+}
+
+.points span {
+  font-size: 15px;
+  color: var(--indigo);
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .points {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

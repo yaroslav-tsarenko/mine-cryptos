@@ -1,0 +1,63 @@
+.dialog {
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+
+.dialog[open] {
+  animation: pop-in 0.35s var(--ease);
+}
+
+.dialog::backdrop {
+  background: rgba(30, 20, 90, 0.45);
+  backdrop-filter: blur(4px);
+  animation: fade-in 0.25s ease;
+}
+
+.sm {
+  max-width: 440px;
+}
+
+.md {
+  max-width: 560px;
+}
+
+.panel {
+  padding: 28px clamp(20px, 4vw, 32px) 32px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: var(--text);
+}
+
+.close {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin: -6px -8px 0 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--lavender-2);
+  color: var(--indigo);
+}
+
+.close:hover {
+  background: var(--primary-soft-2);
+}

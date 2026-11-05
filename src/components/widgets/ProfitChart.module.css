@@ -1,0 +1,140 @@
+.wrap {
+  position: relative;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  touch-action: pan-y;
+}
+
+.grid {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.zero {
+  stroke: var(--line-strong);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+
+.axis {
+  font-size: 11px;
+  fill: var(--subtle);
+  font-family: var(--font);
+}
+
+.revenue,
+.cost,
+.profit {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: d 0.5s var(--ease);
+}
+
+.revenue {
+  stroke: #10b981;
+}
+
+.cost {
+  stroke: #f97316;
+  stroke-dasharray: 6 5;
+}
+
+.profit {
+  stroke: var(--primary);
+  stroke-width: 3;
+}
+
+.be {
+  stroke: var(--primary);
+  stroke-dasharray: 3 4;
+}
+
+.beLabel {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--primary);
+  font-family: var(--font);
+}
+
+.cursor {
+  stroke: var(--indigo);
+  stroke-opacity: 0.3;
+}
+
+.dotRev {
+  fill: #10b981;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.dotCost {
+  fill: #f97316;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.dotProfit {
+  fill: var(--primary);
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.tip {
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(33, 33, 33, 0.92);
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.tRev::before,
+.tCost::before,
+.tProfit::before,
+.lRev::before,
+.lCost::before,
+.lProfit::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.tRev::before,
+.lRev::before {
+  background: #10b981;
+}
+
+.tCost::before,
+.lCost::before {
+  background: #f97316;
+}
+
+.tProfit::before,
+.lProfit::before {
+  background: #8b7cf6;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}

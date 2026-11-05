@@ -1,0 +1,241 @@
+.root {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 150;
+}
+
+.fab {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  color: #fff;
+  box-shadow: 0 14px 34px rgba(63, 40, 198, 0.4);
+  transition: transform 0.3s var(--ease);
+}
+
+.fab:hover {
+  transform: scale(1.06) rotate(-6deg);
+}
+
+.fabOpen {
+  transform: rotate(90deg);
+}
+
+.dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 2.5px solid #fff;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid #22c55e;
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+.panel {
+  position: absolute;
+  right: 0;
+  bottom: 76px;
+  display: flex;
+  flex-direction: column;
+  width: min(370px, calc(100vw - 32px));
+  height: min(540px, calc(100dvh - 120px));
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px) scale(0.97);
+  transform-origin: bottom right;
+  transition:
+    opacity 0.25s,
+    transform 0.3s var(--ease),
+    visibility 0.25s;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 16px 16px 18px;
+  background: var(--grad-primary);
+  color: #fff;
+}
+
+.head strong {
+  display: block;
+  font-size: 16px;
+}
+
+.online {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.x {
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  background: var(--lavender);
+}
+
+.msg {
+  max-width: 85%;
+  padding: 11px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  animation: pop-in 0.3s var(--ease);
+}
+
+.bot {
+  align-self: flex-start;
+  background: #fff;
+  color: var(--indigo);
+  border-bottom-left-radius: 4px;
+  box-shadow: var(--shadow-sm);
+}
+
+.me {
+  align-self: flex-end;
+  background: var(--primary);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.msgLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 14px 16px;
+}
+
+.typing span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--subtle);
+  animation: float 1s ease-in-out infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.quick {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.quick button {
+  flex: none;
+  padding: 7px 12px;
+  border-radius: var(--pill);
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.quick button:hover:not(:disabled) {
+  border-color: var(--primary);
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+}
+
+.form input {
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--pill);
+  border: 1.5px solid var(--line-strong);
+  outline: none;
+  font-size: 15px;
+}
+
+.form input:focus {
+  border-color: var(--primary);
+}
+
+.form button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+}
+
+.form button:disabled {
+  opacity: 0.5;
+}
